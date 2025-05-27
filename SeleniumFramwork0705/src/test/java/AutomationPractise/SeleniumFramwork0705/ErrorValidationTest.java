@@ -28,7 +28,7 @@ public class ErrorValidationTest extends BaseTest {
     public void EndToEndTest() throws InterruptedException, IOException {
 	        ProductCatalogue onproductCatalogue = landingPage.loginApplication("urfi@gmail.com1","urfi@1234");
 	        WebElement LoginErrorPopUp = landingPage.getLoginErrorMessage();
-	        Assert.assertEquals(LoginErrorPopUp.getText().trim(), "Incorrect 3email or password.");
+	        Assert.assertEquals(LoginErrorPopUp.getText().trim(), "Incorrect email or password.");
 	  }
     
     @Test
